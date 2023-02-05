@@ -39,15 +39,15 @@ function App(){
   
         id: "Name",
   
-        message: "Hi {previousValue}, Please select your issue",
+        message: "Hi {previousValue}, How are you feeling today",
   
-        trigger: "issues",
+        trigger: "feeling",
   
       },
   
       {
   
-        id: "issues",
+        id: "feeling",
   
         options: [
   
@@ -61,7 +61,7 @@ function App(){
   
           },
   
-          { value: "Angular", label: "Angular", trigger: "Angular" },
+          { value: "HAAPY:)", label: "SAD:(", trigger: "I DON'T KNOW!!" },
   
         ],
   
@@ -69,11 +69,11 @@ function App(){
   
       {
   
-        id: "React",
+        id: "HAPPY:)",
   
         message:
   
-          "Thanks for letting your React issue, Our team will resolve your issue ASAP",
+          "THAT'S AWESOME!! WHAT MAKES YOU HAPPY TODAY",
   
         end: true,
   
@@ -81,11 +81,11 @@ function App(){
   
       {
   
-        id: "Angular",
+        id: "SAD:(",
   
         message:
   
-          "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
+          "WANNA TALK ABOUT IT?",
   
         end: true,
   
