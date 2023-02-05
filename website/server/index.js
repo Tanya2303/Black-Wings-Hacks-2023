@@ -9,7 +9,7 @@ const bcrypt = require('bcryptjs')
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://localhost:27017/black-wings-hacks')
+mongoose.connect(process.env.MONGODB_URI)
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
