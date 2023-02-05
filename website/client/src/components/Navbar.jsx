@@ -10,10 +10,9 @@ export default function Navbar() {
                 className="flex justify-between md:justify-around py-4 w-full top-0 left-0 right-0 z-10 px-8 md:px-3">
 
                 <div className="cursor-pointer">
-                    <img src={Logo} className='w-52' />
-                        {/* <h3 className="text-4xl font-medium w-52">
+                        <h3 className="text-4xl font-medium w-52">
                             Allay
-                        </h3> */}
+                        </h3>
                 </div>
 
                 <div
