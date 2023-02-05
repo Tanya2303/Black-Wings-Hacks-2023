@@ -1,4 +1,3 @@
-// thomas-vimare-IZ01rjX0XQA-unsplash
 import React from 'react'
 import HeroHomeImg from "../assets/hero.svg"
 
@@ -8,7 +7,7 @@ export default function Home() {
             <main className="flex flex-col items-center justify-center mt-4">
 
                 <div className='md:grid md:grid-cols-2 items-center px-36 py-8'>
-                    <div className='text-white'>
+                    <div className=''>
                         <h1 className='text-3xl md:text-6xl'>About Us</h1>
                         <p className='text-xl md:text-2xl py-4 tracking-wider'>A shoort description of web site.</p>
 
@@ -39,7 +38,7 @@ export default function Home() {
                 </section>
 
                 <section className="p-20 space-y-8">
-                    <div className='text-white'>
+                    <div className=''>
                         <h1 className='text-5xl'>Tips to keep your mind calm:</h1>
                         <ul className="text-xl ml-5 py-4">
                             <li className="list-disc py-1">Take a break.</li>

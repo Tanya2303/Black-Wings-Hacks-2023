@@ -6,7 +6,7 @@ import OnlineYogaImg from '../assets/online_yoga.jpg'
 export default function TherapySessions() {
     return (
         <div>
-            <div className='text-center text-6xl font-base text-white'>Therapy Sessions</div>
+            <div className='text-center text-6xl font-base'>Therapy Sessions</div>
 
             <div className="flex flex-wrap flex-col-2 justify-around w-full p-28 space-x-4" >
 

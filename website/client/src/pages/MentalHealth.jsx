@@ -4,7 +4,7 @@ import { HiX } from "react-icons/hi";
 export default function MentalHealth() {
     return (
         <div>
-            <div className='text-center text-6xl font-base text-white'>Mental Health Check</div>
+            <div className='text-center text-6xl font-base'>Mental Health Check</div>
 
             <div className="flex flex-wrap flex-col-2 justify-around w-full px-16 space-x-3 space-y-3" >
 

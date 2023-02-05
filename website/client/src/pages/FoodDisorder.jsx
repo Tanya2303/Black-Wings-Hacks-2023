@@ -5,7 +5,7 @@ import Food2Img from "../assets/food2.svg"
 export default function FoodDisorder() {
     return (
         <div>
-            <div className='text-center text-6xl font-base text-white'>Me, Today</div>
+            <div className='text-center text-6xl font-base'>Me, Today</div>
 
             <div className='md:grid md:grid-cols-2 items-center px-16 pb-8'>
                 <div className=''>

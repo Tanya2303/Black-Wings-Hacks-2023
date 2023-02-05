@@ -1,10 +1,14 @@
-import React from 'react'
+import { useState } from 'react';
+import { HiX } from "react-icons/hi"
 import BookTherapyImg from "../assets/book_therapy.svg"
 
 export default function BookYoga() {
+
+    const [showSubmit, setShowSubmit] = useState(false);
+
     return (
         <div>
-            <div className='text-center text-6xl font-base text-white'>Book Therapy Sessions</div>
+            <div className='text-center text-6xl font-base'>Book Therapy Sessions</div>
 
             <div className='md:grid md:grid-cols-2 items-center px-16 pb-8'>
                 <div className=''>
@@ -28,7 +32,37 @@ export default function BookYoga() {
                             <input type="date" id="bookDate" name="bookDate" className='text-xl'></input>
 
                             <div className=''>
-                                <button class="my-2 bg-tertiary text-white py-2 px-6 rounded-md text-xl">Submit</button>
+                                <button onClick={() => setShowSubmit(true)} class="my-2 bg-tertiary text-white py-2 px-6 rounded-md text-xl">Submit</button>
+                                {showSubmit ? (
+                                    <div>
+                                        <div className="flex overflow-x-hidden mx-4 md:mx-8 h-screen overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none items-center justify-center w-screen">
+                                            <div className="relative my-6 mx-auto w-screen">
+                                                <div className="ml-[32rem] border-0 rounded-xl  shadow-lg relative flex flex-col w-[26rem] bg-[#93b0b7] outline-none focus:outline-none ">
+                                                    <div className="flex items-start justify-between p-5 border-solid rounded-t">
+
+                                                        <button
+                                                            className="absolute right-6"
+                                                            onClick={() => setShowSubmit(false)}
+                                                            aria-hidden="false"
+                                                            aria-label="button"
+                                                        >
+                                                            <HiX
+                                                                className="h-7 w-7 text-white"
+                                                                aria-hidden="false"
+                                                            />
+                                                        </button>
+                                                    </div>
+
+                                                    <div className="grid place-items-center text-xl py-2 gap-2 w-full mb-4 text-white">
+                                                        <div className="p-8 text-xl">You will be notified once the therapist confirms the session</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="opacity-25 fixed inset-0 z-40 h-screen bg-black"></div>
+                                    </div>
+                                ) : null}
                             </div>
 
                         </div>

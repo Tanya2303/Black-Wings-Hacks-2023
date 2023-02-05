@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate, NavLink } from 'react-router-dom'
-export default function Navbar() {
 
+export default function Navbar() {
 
     return (
         <div>
@@ -9,7 +9,7 @@ export default function Navbar() {
                 className="flex justify-between md:justify-around py-4 w-full top-0 left-0 right-0 z-10 px-8 md:px-3">
 
                 <div className="cursor-pointer">
-                        <h3 className="text-4xl font-medium text-white w-52">
+                        <h3 className="text-4xl font-medium w-52">
                             React App
                         </h3>
                 </div>
@@ -18,25 +18,29 @@ export default function Navbar() {
                     className="items-center md:space-x-8 justify-center justify-items-start md:justify-items-center md:flex md:pt-2 w-full left-0 top-16 px-5 md:px-10 py-3 md:py-0 border-t md:border-t-0 text-xl">
 
                     <Link to="/">
-                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-tertiary cursor-pointer text-white">Home</span>
+                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-secondary hover:text-white cursor-pointer">Home</span>
                     </Link>
 
                     <Link to="/fooddisorder">
-                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-tertiary cursor-pointer text-white">Food Disorder</span>
+                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-secondary hover:text-white cursor-pointer">Food Disorder</span>
                     </Link>
 
                     <Link to="/mentalhealth">
-                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-tertiary cursor-pointer text-white">Mental Health Check</span>
+                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-secondary hover:text-white cursor-pointer">Mental Health Check</span>
+                    </Link>
+
+                    <Link to="/therapysessions">
+                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-secondary hover:text-white cursor-pointer">Therapy Sessions</span>
                     </Link>
 
                     <Link to="/myprogress">
-                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-tertiary cursor-pointer text-white">My Progress</span>
+                        <span className="inline-flex w-auto px-3 py-2 rounded hover:bg-secondary hover:text-white cursor-pointer">My Progress</span>
                     </Link>
                 </div>
 
                 <div className="flex items-center space-x-5 md:flex">
                     <a
-                        className="flex text-white cursor-pointer transition-colors duration-300 font-semibold -ml-6">
+                        className="flex cursor-pointer transition-colors duration-300 font-semibold -ml-6">
                         <svg
                             className="fill-current h-5 w-5 mr-2 mt-0.5"
                             xmlns="http://www.w3.org/2000/svg"
