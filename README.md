@@ -1,4 +1,4 @@
-# Allay
+# Allay(https://devpost.com/software/allay-for-all-the-beautiful-people-out-there)
 
 ## 💡 Inspiration
 
